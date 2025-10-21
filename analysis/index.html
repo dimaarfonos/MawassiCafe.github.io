@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Анализ работы сайта Mawassi Cafe</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="page-header">
+      <h1>Аналитика посещаемости сайта Mawassi Cafe</h1>
+      <p class="lead">
+        Отчёт построен на основе агрегированных данных о посещениях и конверсии.
+      </p>
+    </header>
+
+    <main>
+      <section class="kpi-grid" aria-labelledby="kpi-title">
+        <h2 id="kpi-title">Ключевые показатели</h2>
+        <div class="kpi-card">
+          <p class="kpi-label">Всего посещений</p>
+          <p id="totalVisitors" class="kpi-value"></p>
+        </div>
+        <div class="kpi-card">
+          <p class="kpi-label">Среднее время на сайте</p>
+          <p id="avgDuration" class="kpi-value"></p>
+        </div>
+        <div class="kpi-card">
+          <p class="kpi-label">Средний показатель отказов</p>
+          <p id="avgBounce" class="kpi-value"></p>
+        </div>
+        <div class="kpi-card">
+          <p class="kpi-label">Конверсия</p>
+          <p id="conversionRate" class="kpi-value"></p>
+        </div>
+      </section>
+
+      <section class="table-section" aria-labelledby="table-title">
+        <h2 id="table-title">Динамика по месяцам</h2>
+        <table>
+          <thead>
+            <tr>
+              <th scope="col">Месяц</th>
+              <th scope="col">Посещения</th>
+              <th scope="col">Новые посетители</th>
+              <th scope="col">Среднее время (мин)</th>
+              <th scope="col">Отказы</th>
+              <th scope="col">Заказы</th>
+            </tr>
+          </thead>
+          <tbody id="monthlyBody"></tbody>
+        </table>
+      </section>
+
+      <section class="insights" aria-labelledby="insights-title">
+        <h2 id="insights-title">Выводы</h2>
+        <ul id="insightList"></ul>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <p>&copy; Mawassi Cafe. Сводный отчёт по работе сайта.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
